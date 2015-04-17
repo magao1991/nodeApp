@@ -1,0 +1,11 @@
+{
+  "name": "nodeHelloWorld",
+  "description": "node hello world test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.12.3",
+    "jade": "1.9.2",
+    "ejs": "2.3.1"
+  }
+}
