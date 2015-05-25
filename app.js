@@ -2,7 +2,7 @@ var express = require('express'),
 	path = require('path'),
 	app = express();
 
-app.set('views', path.join(__dirname , 'views'));
+app.set('views', path.join(__dirname , 'src/views'));
 
 app.set('view engine', 'jade');
 app.engine('jade', require('jade').__express);
