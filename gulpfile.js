@@ -22,6 +22,14 @@ var paths = {
 	}
 }
 
+// 模板处理
+gulp.task('jade', function() {
+	gulp.src(['./src/**/*.jade', '!./src/views/jade/layouts/*.jade'])
+    .pipe(plugins.jade())
+    .pipe(gulp.dest('./dist/src'))
+});
+
+
 // 样式处理
 gulp.task('less', ['clean'], function() {
 	// var lessFilter = plugins.filter(paths.css.filter);
@@ -35,6 +43,7 @@ gulp.task('less', ['clean'], function() {
 			.pipe(plugins.rename({suffix: ".min"}))
 			.pipe(gulp.dest(paths.css.dist));
 });
+
 
 //清理文件
 gulp.task('clean', function() {
