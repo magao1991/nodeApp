@@ -5,8 +5,11 @@
   "private": true,
   "dependencies": {
     "express": "4.12.3",
-    "jade": "1.9.2",
-    "ejs": "2.3.1"
+    "jade": ">1.9.2",
+    "ejs": "2.3.1",
+    "less": "*",
+    "coffee-script": "*",
+    "markdown": "*"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
