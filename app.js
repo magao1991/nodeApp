@@ -8,7 +8,7 @@ var express = require('express'),
 
 app.set('env', config.debug ? 'development' : 'production');
 app.set('port', config.port || 3000);
-app.set('rootDir', '/dist/');
+app.set('rootDir', config.rootDir);
 
 app.set('views', path.join(__dirname , app.get('rootDir'), 'views'));
 app.set('view engine', 'jade');
