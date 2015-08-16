@@ -1,9 +1,8 @@
 {
 	"restartable": "rs",
-	"ignore": [
-		".git",
-		"node_modules/",
-		"dev/"
+	"watch": [
+		"app.js",
+		"app-config.js"
 	],
 	"env": {
 		"NODE_ENV": "development"

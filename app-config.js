@@ -1,5 +1,6 @@
 module.exports = {
-	port: 3000,
+	domain: 'magao.com',
+	port: 8088,
 	debug: true,
 	rootDir: './dev/'
 }
