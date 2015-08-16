@@ -3,19 +3,22 @@ block content
 	p= message
 block foot
 	div magao加快了加快拉fdsfddfdffdsfdsfsdsffdsfdsfda
-		p 我真的成功了
-		img(src='/img/mg.jpg')
-		div.cl 好了吗dfs
+		p 我真的成功了吗？
+		//- img(src='/img/mg.jpg')
+		//- img(src='/img/2015.jpg')
+		img(src='/img/yh.jpg')
+		div.cl 好了吗
 	include:markdown ./text/jade-book.md
 	include:markdown ./text/jade-desc.md
 	include:markdown ./text/jade-info.md
 	script(src="/js/plugins/jq.js")
 	script(src="/js/plugins/jquery.coffee")
+	script(src="/js/plugins/j.js")
 	script
 		:coffee-script
 			console.log 'magao';
 	script(type='text/javascript').
 		document.write(unescape("%3Cscript src='" + ("https" == location.protocol ? "https://" : "http://") + (location.host || 'localhost').split(':')[0] + ":35729/livereload.js?snipver=1' type='text/javascript' %3E%3C/script%3E"));
-	
 
-	
+
+
